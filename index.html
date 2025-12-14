@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Hawk Roads</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Dashboard Hawk Roads</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>🚦 Hawk Roads</h1>
-    <p>Sistem Lalu Lintas Pintar Berbasis AI</p>
+<h2>📊 Dashboard Lalu Lintas</h2>
 
-    <button>Kunjungi Dashboard</button>
+<p>Kepadatan Kendaraan:</p>
+<select id="density" onchange="updateTraffic()">
+  <option value="low">Rendah</option>
+  <option value="medium">Sedang</option>
+  <option value="high">Tinggi</option>
+</select>
 
+<p id="trafficLight">Lampu: Hijau</p>
+
+<a href="accident.html">➡️ Deteksi Kecelakaan</a><br>
+<a href="hotspot.html">➡️ Peta Hotspot</a>
+
+<script src="script.js"></script>
 </body>
 </html>
