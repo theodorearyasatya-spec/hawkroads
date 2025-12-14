@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deteksi Kecelakaan</title>
+</head>
+<body>
+
+<h2>🚑 Deteksi Kecelakaan</h2>
+
+<button onclick="deteksi()">Scan CCTV</button>
+
+<p id="status">Status: Normal</p>
+
+<script>
+function deteksi() {
+  document.getElementById("status").innerText =
+    "⚠️ Kecelakaan Terdeteksi! Ambulans Dikirim.";
+}
+</script>
+
+</body>
+</html>

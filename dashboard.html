@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Hawk Roads</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>📊 Dashboard Monitoring</h2>
+
+<label>Kepadatan Lalu Lintas:</label>
+<select id="density" onchange="updateTraffic()">
+  <option value="low">Rendah</option>
+  <option value="medium">Sedang</option>
+  <option value="high">Tinggi</option>
+</select>
+
+<p id="lampu">Lampu: Hijau</p>
+
+<br>
+<a href="accident.html">Deteksi Kecelakaan</a><br>
+<a href="hotspot.html">Peta Hotspot</a>
+
+<script src="script.js"></script>
+</body>
+</html>
